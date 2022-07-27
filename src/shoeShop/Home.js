@@ -5,6 +5,10 @@ import Cart from "./Cart";
 import clsx from "clsx";
 import style from "./style.module.css";
 
+// Toast
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export class Home extends Component {
   products = [
     {
@@ -162,6 +166,18 @@ export class Home extends Component {
     });
   };
 
+  notify = () => {
+    toast.success("Success!", {
+      position: "top-right",
+      autoClose: 900,
+      hideProgressBar: true,
+      closeOnClick: true,
+      //   pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
+
   // handler function
   // add to cart
   addToCart = (prod) => {
@@ -181,6 +197,8 @@ export class Home extends Component {
       };
       cloneCart.push(cartItem);
     }
+
+    this.notify();
 
     this.setState(
       {
@@ -291,6 +309,7 @@ export class Home extends Component {
             reduceCartItem={this.reduceCartItem}
             checkoutCart={this.checkoutCart}
           />
+          <ToastContainer />;
         </div>
       </div>
     );
