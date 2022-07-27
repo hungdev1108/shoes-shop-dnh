@@ -168,7 +168,7 @@ export class Home extends Component {
 
   notify = () => {
     toast.success("Success!", {
-      position: "top-right",
+      position: "top-left",
       autoClose: 900,
       hideProgressBar: true,
       closeOnClick: true,
