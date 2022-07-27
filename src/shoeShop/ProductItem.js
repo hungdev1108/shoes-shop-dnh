@@ -6,7 +6,7 @@ export class ProductItem extends Component {
     return (
       <div className="card p-3 h-100 d-flex justify-content-between">
         <div className="img__product">
-          <img src={image} className="w-100 d-block" alt="" />
+          <img src={image} className="w-100 d-block" alt={name} />
         </div>
         <div className="content__product">
           <h5>{name}</h5>
