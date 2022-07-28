@@ -8,9 +8,7 @@ export class Cart extends Component {
         <div className="modal-dialog modal-lg">
           <div className="modal-content">
             <div className="modal-header">
-              <h3 className="modal-title" id="modalCart">
-                Your Cart
-              </h3>
+              <h3 className="modal-title">Your Cart</h3>
               <button
                 ref={this.closeBtnRef}
                 type="button"

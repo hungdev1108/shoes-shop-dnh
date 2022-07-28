@@ -21,6 +21,9 @@ export class ProductItem extends Component {
           >
             View Detail
           </button>
+          {/* Modal */}
+
+          {/* Modal */}
           <button
             onClick={() => this.props.addToCart(this.props.prod)}
             className="btn btn-dark"

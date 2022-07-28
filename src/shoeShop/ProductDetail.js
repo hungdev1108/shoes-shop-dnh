@@ -9,9 +9,7 @@ export class ProductDetail extends Component {
           <div className="modal-dialog modal-lg">
             <div className="modal-content">
               <div className="modal-header">
-                <h3 className="modal-title" id="modalProduct">
-                  Product Detail
-                </h3>
+                <h3 className="modal-title">Product Detail</h3>
                 <button
                   type="button"
                   className="btn-close"

@@ -155,7 +155,7 @@ export class Home extends Component {
 
   // State
   state = {
-    selectedProduct: null,
+    selectedProduct: {},
     cart: [],
   };
 
